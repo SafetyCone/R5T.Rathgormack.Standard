@@ -13,12 +13,14 @@ namespace R5T.Rathgormack.Standard
     {
         public static IServiceCollection AddHelloWorldMessenger(this IServiceCollection services)
         {
+            // Works!!! Hooray!!!
             //services
-            //    .AddMullingarHelloWorldMessenger(ServiceAction.AddedElsewhere) // Works!!! Hooray!!!
+            //    .AddMullingarHelloWorldMessenger(ServiceAction.AddedElsewhere)
             //    .AddHelloWorldMessageProvider()
             //    ;
 
-            services.AddMullingarHelloWorldMessenger(services.AddHelloWorldMessageProviderAction()); // Works!
+            // Works!!! Hooray!!!
+            services.AddMullingarHelloWorldMessenger(services.AddHelloWorldMessageProviderAction());
 
             return services;
         }
